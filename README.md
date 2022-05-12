@@ -18,25 +18,25 @@ This file is a normal python file. With the installed packages from required, it
 
 Download this folder to your computer.  
 `git clone https://github.com/JoshCap20/twitter_follow_bot.git`  
-Navigate to the folder containing the program.
+Navigate to the folder containing the program.  
 `cd twitter_follow_bot`   
-Install required dependencies using pip.
-`pip install -r requirements.txt`
+Install required dependencies using pip.  
+`pip install -r requirements.txt`  
 Run the file with Python.  
 `python followbot.py`  
 
-That's it. Make sure to configure the program to your own API keys first.
+That's it. Make sure to configure the program to your own API keys first.  
 
 
 CONFIGURATION
 -------------
 
-[coming soon]
+[coming soon]  
 
 TROUBLESHOOTING
 ---------------
 
-Try using a virtual environment to install dependencies and run the program.
+Try using a virtual environment to install dependencies and run the program.  
 
 Make sure your API key includes read and write permissions. Just read permissions will result in an error since the bot will be unable to follow users.
 
