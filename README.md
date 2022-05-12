@@ -13,20 +13,23 @@ USAGE
 -------------
 This file is a normal python file. With the installed packages from required, it should run as a python file with the command:
 
+Download this repository to your computer.
+`git clone https://github.com/JoshCap20/twitter_follow_bot.git`  
 Navigate to the folder containing the file with  
 `cd twitter_follow_bot`   
 Run the file with Python.  
 `python followbot.py`  
 
-That's it.
+That's it. Make sure to configure the program to your own API keys first.
 
 
 CONFIGURATION
 -------------
 
+[coming soon]
+
 TROUBLESHOOTING
 ---------------
 
-MAINTAINERS
------------
+Make sure your API key includes read and write permissions. Just read permissions will result in an error since the bot will be unable to follow users.
 
