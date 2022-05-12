@@ -9,7 +9,7 @@ REQUIREMENTS
 ------------
 All requirements for this package are included in the file 'requirements.txt' in this directory.
 
-Installation with pip. Must be in twitter_follow_bot/requirements.txt.
+Installation with pip. Must be in twitter_follow_bot/requirements.txt.  
 `pip install -r requirements.txt`
 
 USAGE
@@ -35,7 +35,7 @@ CONFIGURATION
 **required**  
 Configure the bot in the main file (followbot.py) with your personal API and access keys. 
 ### Follow Configurations:  
-**optional**
+**optional**  
   1. version: Leave this set to its default, 1. This int value is just to let me easily tweak the codes usage. 
   2. offset: Customize to at what follower in the list of an account's followers to follow.
   3. accounts: What accounts followers to follow.
