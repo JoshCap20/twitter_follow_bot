@@ -13,7 +13,7 @@ USAGE
 -------------
 This file is a normal python file. With the installed packages from required, it should run as a python file with the command:
 
-Download this repository to your computer.
+Download this repository to your computer.  
 `git clone https://github.com/JoshCap20/twitter_follow_bot.git`  
 Navigate to the folder containing the file with  
 `cd twitter_follow_bot`   
