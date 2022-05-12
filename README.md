@@ -31,8 +31,9 @@ That's it. Make sure to configure the program to your own API keys first.
 CONFIGURATION
 -------------
 
-1. API Configuration: Configure the bot in the main file (followbot.py) with your personal API and access keys. 
-2. Follow Configurations:
+### API Configuration:  
+Configure the bot in the main file (followbot.py) with your personal API and access keys. 
+### Follow Configurations:  
   1. version: Leave this set to its default, 1. This int value is just to let me easily tweak the codes usage. 
   2. offset: Customize to at what follower in the list of an account's followers to follow.
   3. accounts: What accounts followers to follow.
