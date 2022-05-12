@@ -1,11 +1,18 @@
+"""Main file."""
 import tweepy
 import time
 
 # menu
 run: bool = True
 
+# API keys, see readme
+client_key: str = "KEY HERE"
+client_token: str = "KEY HERE"
+access_key = "KEY HERE"
+access_token = "KEY HERE"
+ 
 # options
-version: int = 1 # available: [1]
+version: int = 1 # available: [1], add more options below
 offset: int = 1
 
 # accounts followers to follow
@@ -19,8 +26,8 @@ loop_interval: int = 3600
 # V1 Settings: follows_per_loop = 20, loop_interval = 3600
 
 # Authenticate to Twitter
-auth = tweepy.OAuthHandler("client_key", "client_token")
-auth.set_access_token("access_key", "access_token")
+auth = tweepy.OAuthHandler(client_key, client_token)
+auth.set_access_token(access_key, access_token)
 api = tweepy.API(auth, wait_on_rate_limit=True, retry_delay=100)
 
 try:
@@ -51,24 +58,29 @@ def follow_account_followers(name, q: int):
             print("Error. Sleeping for 15min.")
             time.sleep(60*15)
         i += 1
-        time.sleep(6.5*(i+1)) 
+        time.sleep(6.5*(i+1))
     print("Completed.")
 
 i: int = 0
 while run:
     if version == 1:
+        # LOGIC FOR BOT, CONFIGURE YOUR OWN 
         print("Executing: follow bot [V1]")
         #follows_per_loop = 20
         #loop_interval = 3600
         o = i + 1
         follow_account_followers(accounts[i], o)
         print(f"Loop {i + 1}/{len(accounts)} Completed.")
-        i += 1
-        if i == len(accounts) - 1:
-            run = False
-            print("Killed follow bot. [run=False]")
         print(f"Next action in {loop_interval//60} minutes.")
         time.sleep(loop_interval)
+        if i == len(accounts) - 1:
+            print("Done with current offset.")
+            offset += 1
+            i = -1
+        i += 1
+    elif version == 2:
+        ## ADD OWN HERE
+        pass
     else:
         print("Error: No program found. Running latest version.")
         version -= 1
