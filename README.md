@@ -32,8 +32,10 @@ CONFIGURATION
 -------------
 
 ### API Configuration:  
+**required**  
 Configure the bot in the main file (followbot.py) with your personal API and access keys. 
 ### Follow Configurations:  
+**optional**
   1. version: Leave this set to its default, 1. This int value is just to let me easily tweak the codes usage. 
   2. offset: Customize to at what follower in the list of an account's followers to follow.
   3. accounts: What accounts followers to follow.
