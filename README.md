@@ -3,7 +3,7 @@ A follow bot for twitter using API account and access keys.
 
 INTRODUCTION
 ------------
-This bot uses a Python package 'tweepy' to connect with Twitter's APIs. While this bot could be ran extremely fast by removing all sleep commands from the 'time' package, these are in place to slow down the program in order to avoid being banned from Twitter by making a large amount of follow requests to its API. Please proceed with caution changing these settings as this is what I have found to be most effective, especially when ran continously on a cloud server.
+This bot uses a Python package 'tweepy' to connect with Twitter's APIs. While this bot could be ran extremely fast by removing all sleep commands from the 'time' package, these are in place to slow down the program in order to avoid being banned from Twitter by making a large amount of follow requests to its API. Please proceed with caution changing these settings as this is what I have found to be most effective, especially when ran continously on a cloud server. This program first gathers a list of the user IDs of a given account in accounts and follows their followers by this ID.
 
 REQUIREMENTS
 ------------
@@ -31,7 +31,14 @@ That's it. Make sure to configure the program to your own API keys first.
 CONFIGURATION
 -------------
 
-[coming soon]  
+1. API Configuration: Configure the bot in the main file (followbot.py) with your personal API and access keys. 
+2. Follow Configurations:
+  1. version: Leave this set to its default, 1. This int value is just to let me easily tweak the codes usage. 
+  2. offset: Customize to at what follower in the list of an account's followers to follow.
+  3. accounts: What accounts followers to follow.
+  4. follows_per_loop: How many followers of a given account to follow.
+  5. loop_interval: Amount of time to wait between following different accounts followers. This is a sort of time-out to not exceed API rate limits.
+  6. run: Run. Leave set to true or the program won't run. Used for feature testing.
 
 TROUBLESHOOTING
 ---------------
