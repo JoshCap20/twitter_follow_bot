@@ -9,14 +9,19 @@ REQUIREMENTS
 ------------
 All requirements for this package are included in the file 'requirements.txt' in this directory.
 
+Installation with pip. Must be in twitter_follow_bot/requirements.txt.
+`pip install -r requirements.txt`
+
 USAGE
 -------------
 This file is a normal python file. With the installed packages from required, it should run as a python file with the command:
 
-Download this repository to your computer.  
+Download this folder to your computer.  
 `git clone https://github.com/JoshCap20/twitter_follow_bot.git`  
-Navigate to the folder containing the file with  
+Navigate to the folder containing the program.
 `cd twitter_follow_bot`   
+Install required dependencies using pip.
+`pip install -r requirements.txt`
 Run the file with Python.  
 `python followbot.py`  
 
@@ -31,5 +36,9 @@ CONFIGURATION
 TROUBLESHOOTING
 ---------------
 
+Try using a virtual environment to install dependencies and run the program.
+
 Make sure your API key includes read and write permissions. Just read permissions will result in an error since the bot will be unable to follow users.
+
+
 
